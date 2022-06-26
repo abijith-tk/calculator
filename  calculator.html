@@ -1,38 +1,41 @@
 <html>
-    <head>
-        <title>Calculator</title>
-       
-        <link rel="stylesheet" href="calculator.css">
-    </head>
-    <body>
-        <div id="calc">
-            <br>
-            <div id="scr">
-            </div>
-            <div class="row">
-                <button value="7" onclick="value(1)">7</button>
-                <button value="8" onclick="value(2)">8</button>
-                <button value="9" onclick="value(9)">9</button>
-                <button value="/" onclick="value('/')">/</button>
-            </div>
-            <div class="row">
-                   <button value="4" onclick="value(1)">4</button>
-                <button value="5" onclick="value(2)">5</button>
-                <button value="6" onclick="value(9)">6</button>
-                <button value="x" onclick="value('*')">x</button>
-            </div>
-            <div class="row">
-   <button value="1" onclick="value(1)">1</button>
-                <button value="2" onclick="value(2)">2</button>
-                <button value="3" onclick="value(9)">3</button>
-                <button value="-" onclick="value('-')">-</button>
-            </div>
-            <div class="row">
-   <button value="." onclick="value('.')">.</button>
-                <button value="0" onclick="value(0)">0</button>
-                <button value="=" onclick="result()">=</button>
-                <button value="+" onclick="value('+')">+</button>
-            </div>
+<head>
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div id="calc">
+        <br>
+        <input type="text" id="scr">
+        <div class="row">
+            <button value="reset" onclick="clrscr()">C</button>
         </div>
-    </body>
+        <div class="row">
+            <button value="7" class="btn" onclick="btnClick(7)">7</button>
+            <button value="8" class="btn" onclick="btnClick(8)">8</button>
+            <button value="9" class="btn" onclick="btnClick(9)">9</button>
+            <button value="/" class="btn" onclick="btnClick('/')">/</button>
+        </div>
+        <div class="row">
+            <button value="4" class="btn" onclick="btnClick(4)">4</button>
+            <button value="5" class="btn" onclick="btnClick(5)">5</button>
+            <button value="6" class="btn" onclick="btnClick(6)">6</button>
+            <button value="x" class="btn" onclick="btnClick('*')">x</button>
+        </div>
+        <div class="row">
+            <button value="1" class="btn" onclick="btnClick(1)">1</button>
+            <button value="2" class="btn" onclick="btnClick(2)">2</button>
+            <button value="3" class="btn" onclick="btnClick(3)">3</button>
+            <button value="-" class="btn"onclick="btnClick('-')">-</button>
+        </div>
+        <div class="row">
+            <button value="." class="btn" onclick="btnClick('.')">.</button>
+            <button value="0" class="btn" onclick="btnClick(0)">0</button>
+            <button value="=" class="btn" onclick="result()">=</button>
+            <button value="+" class="btn" onclick="btnClick('+')">+</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
 </html>
