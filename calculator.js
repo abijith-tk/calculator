@@ -5,9 +5,8 @@ function btnClick(val){
 function clrscr() {
     document.getElementById('scr').value=""
 }
-function result(){
+function result(val){
     var text=document.getElementById('scr').value
-    var output=eval(text)
-    document.getElementById('scr').innerHTML=output;
-    console.log(output)
+    var res=eval(text);
+    document.getElementById('scr').value=res;
 }
