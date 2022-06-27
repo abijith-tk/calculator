@@ -12,8 +12,10 @@
         <br>
         <input type="text" id="scr">
         <div class="row">
-            <button value="reset" onclick="clrscr()">C</button>
-            <button onclick="backSpace()"><<</button>
+            <button value="reset" onclick="clrscr()" class="btn">C</button>
+            <button class="btn" value="(" onclick="btnClick('(')">(</button>
+            <button class="btn" value=")" onclick="btnClick(')')">)</button>
+            <button onclick="backSpace()" class="btn"><<</button>
         </div>
         <div class="row">
             <button value="7" class="btn" onclick="btnClick(7)">7</button>
