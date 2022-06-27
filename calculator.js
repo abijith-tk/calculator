@@ -10,3 +10,8 @@ function result(val){
     var res=eval(text);
     document.getElementById('scr').value=res;
 }
+function backSpace() {
+    var text=document.getElementById('scr').value;
+    var input=text.slice(0,text.length-1);
+    document.getElementById('scr').value=input;
+}
