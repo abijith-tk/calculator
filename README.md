@@ -1,3 +1,2 @@
 # calculator-
-A basic calculator to perform operations like 
-addition, subtraction, multiplication and division.
+calculator which can perform addition,subtraction,multiplication and division operations
